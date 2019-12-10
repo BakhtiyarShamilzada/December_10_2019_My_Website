@@ -268,13 +268,13 @@ $(window).on("hashchange", function(){
 
   // audio
 
-  let contents = document.querySelectorAll('.roundy-blog-item-short-content');
-  for (const content of contents) 
+  let items = document.querySelectorAll('.roundy-blog-item-short');
+  for (const item of items) 
   {
-    content.addEventListener('click', function(e)
+    item.addEventListener('click', function(e)
     {
       e.preventDefault();
-      this.lastElementChild.play();
+      this.lastElementChild.lastElementChild.play();
     })
   }
 
