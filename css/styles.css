@@ -2510,6 +2510,10 @@ button {
   font-weight: bold;
   font-size: 1.3rem;
 }
+.roundy-radialbar-label i
+{
+  color: #01d1a7;
+}
 /*
 [2.5 Back button]
 */
@@ -3301,6 +3305,8 @@ button {
   }
 }
 img.roundy-headpic {
+  height: 300px;
+  transform: scale(1.5);
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;

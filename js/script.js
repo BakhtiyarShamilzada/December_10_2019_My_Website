@@ -266,5 +266,16 @@ $(window).on("hashchange", function(){
     hashlink = $(".roundy-menu .roundy-menu-item:first").attr('href');
   }
 
+  // audio
+
+  let contents = document.querySelectorAll('.roundy-blog-item-short-content');
+  for (const content of contents) 
+  {
+    content.addEventListener('click', function()
+    {
+      this.lastElementChild.play();
+    })
+  }
+
   GotoLink(hashlink, countMenuItems);
 });
