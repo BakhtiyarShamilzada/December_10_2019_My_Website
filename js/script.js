@@ -271,8 +271,9 @@ $(window).on("hashchange", function(){
   let contents = document.querySelectorAll('.roundy-blog-item-short-content');
   for (const content of contents) 
   {
-    content.addEventListener('click', function()
+    content.addEventListener('click', function(e)
     {
+      e.preventDefault();
       this.lastElementChild.play();
     })
   }
