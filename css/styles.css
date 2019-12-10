@@ -3311,6 +3311,8 @@ img.roundy-headpic {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  position: relative;
+  z-index: -1;
 }
 @media only screen and (max-width: 470px) {
   img.roundy-headpic {
@@ -3805,6 +3807,7 @@ img.roundy-portfolio-2-list-item-img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 .roundy-blog-item-short-title {
   color: #7a7a7a;

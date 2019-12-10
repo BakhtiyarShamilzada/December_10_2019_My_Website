@@ -270,13 +270,12 @@ $(window).on("hashchange", function(){
 
   // audio
 
-  let items = document.querySelectorAll('.roundy-blog-item-short');
+  let items = document.querySelectorAll('.roundy-blog-item-short-content');
   for (const item of items) 
   {
-    item.addEventListener('click', function(e)
+    item.addEventListener('click', function()
     {
-      e.preventDefault();
-      this.lastElementChild.lastElementChild.play();
+      this.lastElementChild.play();
     })
   }
 });
