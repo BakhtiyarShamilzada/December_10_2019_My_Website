@@ -217,9 +217,9 @@ $(window).on("load", function(){
   }
 
   var typedOptions = {
-    strings: ["Template for your great resume.",
-              "For copywriters, developers, designers, and any other creative persons.",
-              "Made with <i class='far fa-heart'></i>."],
+    strings: ["Software Developer.",
+              "Sizin üçün yaradıcı web saytların hazırlanması.",
+              "İşimi <i class='far fa-heart'></i>-lə edirəm."],
     typeSpeed: 50,
     loop: true,
     //shuffle: true,

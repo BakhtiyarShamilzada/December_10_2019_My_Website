@@ -1,0 +1,37 @@
+
+<script>
+  jQuery('#roundy-contactform').on('submit', function(e) {
+    e.preventDefault();
+    jQuery('#roundy-contacts-info').html('');
+    jQuery.ajax({
+      url: 'php/mailer.php',
+      type: 'POST',
+      data: jQuery("#roundy-contactform").serialize(),
+      success: function(msg) {
+        jQuery('#roundy-contacts-info').html('<p style="color: green;">Email sent.</p>');
+        jQuery('#roundy-contactform').find("input[type=text],input[type=email], textarea").val("");
+      },
+      error: function(msg) {
+        jQuery('#roundy-contacts-info').html('<p style="color: red;">Something went wrong. Check your data or try to reload page.</p>');
+      }              
+    });
+  });
+  
+</script>
+<h2>Əlaqə.</h2>
+<p>Zəng etməkdən çəkinməyin</p>
+<form id="roundy-contactform">
+  <div class="roundy-row m-mobile-onerow">
+    <div class="roundy-row-cell">
+      <input type="text" name="roundy-name" placeholder="Your name" required="required"/>
+    </div>
+    <div class="roundy-row-cell">
+      <input type="email" name="roundy-email" placeholder="yourmail@example.com" required="required"/>
+    </div>
+  </div>
+  <input type="text" name="roundy-subject" placeholder="Subject" required="required"/>
+  <textarea class="roundy-contact-textarea" placeholder="Message" name="roundy-message" required="required"></textarea>
+  <p><small>Şəxsi məlumatlarınızı bölüşmürük. Bütün sahələr tələb olunur.</small></p>
+  <p id="roundy-contacts-info"></p>
+  <button id="roundy-contacts-send" type="submit">Göndər</button>
+</form>
