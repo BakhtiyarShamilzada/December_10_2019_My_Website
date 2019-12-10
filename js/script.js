@@ -266,6 +266,8 @@ $(window).on("hashchange", function(){
     hashlink = $(".roundy-menu .roundy-menu-item:first").attr('href');
   }
 
+  GotoLink(hashlink, countMenuItems);
+
   // audio
 
   let items = document.querySelectorAll('.roundy-blog-item-short');
@@ -277,6 +279,4 @@ $(window).on("hashchange", function(){
       this.lastElementChild.lastElementChild.play();
     })
   }
-
-  GotoLink(hashlink, countMenuItems);
 });
