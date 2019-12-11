@@ -3769,7 +3769,6 @@ img.roundy-portfolio-2-list-item-img {
   display: inline-block;
   position: relative;
   float: left;
-  cursor: pointer;
 }
 .roundy-blog-item-short:hover .roundy-blog-item-short-title {
   color: #ffffff;
