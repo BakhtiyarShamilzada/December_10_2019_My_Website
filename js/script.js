@@ -259,12 +259,13 @@ $(window).on("load", function () {
 
   // audio
 
-  let items = document.querySelectorAll('.roundy-blog-item-short-content');
-  for (const item of items) {
-    item.addEventListener('click', function () {
-      this.lastElementChild.play();
-    })
-  }
+  // let items = document.querySelectorAll('.roundy-blog-item-short-content');
+  // for (const item of items) {
+  //   item.addEventListener('click', function () {
+  //     this.lastElementChild.play();
+  //   })
+  // }
+
 });
 
 $(window).on("hashchange", function () {
