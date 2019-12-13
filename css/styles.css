@@ -2509,6 +2509,7 @@ button {
 .roundy-radialbar-label {
   font-weight: bold;
   font-size: 1.3rem;
+  text-align: center;
 }
 .roundy-radialbar-label i
 {
